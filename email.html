@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dribbble | Email</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f93c91;
+      color: #fff;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-form input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .search-form button {
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .profile-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+
+    .profile-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .upload-btn {
+      background-color: #fff;
+      color: #f93c91;
+      border: 1px solid #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* .search-form {
+  background-color: #f2f2f2; 
+} */
+
+    .search-form {
+      display: flex;
+      background-color: #7a7777;
+      align-items: center;
+      width: 130px;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .search-form .input-group {
+      position: relative;
+    }
+
+    .search-form .input-group-text {
+      position: absolute;
+      left: 0;
+    }
+
+    .search-form input[type="search"] {
+      padding-left: 30px;
+      background-color: #e9e9e9;
+    }
+
+    .search-input {
+      padding-left: 2rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: 0.5rem center;
+      color: #7a7777;
+    }
+
+    .search-input:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    .bag {
+      color: gray;
+      height: 38px;
+      width: 30px;
+      font-size: 24px;
+      margin-right: 15px;
+      margin-left: 5px;
+      padding-bottom: 15px;
+    }
+
+    .upload-btn {
+      font-weight: 600;
+      margin-left: 10px;
+      background-color: #f93c91;
+      width: 80px;
+      border: none;
+      color: #fff;
+      padding: 0.5rem 0.5rem;
+      border-radius: 10px;
+    }
+
+    .upload-btn:hover {
+      background-color: #f752b5;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+      background-color: #FAFAFA;
+    }
+
+    .footer-container {
+      margin: 50px 40px 20px 40px;
+    }
+
+    a {
+      color: #46464f;
+      text-decoration: none;
+      line-height: 2;
+    }
+
+    .a-pink {
+      color: #f93c91;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+    }
+
+    main p {
+      color: #76747e;
+    }
+
+    .social-icon {
+      margin-right: 10px;
+    }
+
+    .footer-sec-margin {
+      margin-left: 10px;
+      margin-right: -10px;
+    }
+
+    .email-section {
+      flex: 1;
+      padding: 2rem;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dribbled-text{
+        text-align: right;
+      }
+
+    
+    @media (max-width: 767px) {
+
+      .footer-sec-margin {
+        margin: 20px 0 0 0;
+      }
+
+      .a-pink {
+        color: #f93c91;
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      .dribbled-text{
+        text-align: left;
+      }
+
+      .search-bar {
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+    }
+    
+  </style>
+
+</head>
+
+<body>
+
+  <header class="p-2 mb-3 border-bottom">
+    <div class="">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+        <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+
+          <img src="img/dribBlack.jpg" height="55px" width="120px" alt="logo">
+
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary"> <b> Inspiration </b> </a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary"> <b> Find Work </b></a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary"> <b> Learn Design </b> </a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary"> <b> Go Pro </b> </a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary"> <b> Hire Designers </b> </a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 search-form search-bar">
+          <div class="input-group">
+            <input type="search" class="form-control search-input" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+
+        <div class="bag">
+          <i class="bi bi-bag-x-fill"></i>
+        </div>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">New project</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+
+        <button type="submit" id="nextButton" class="upload-btn" onclick="redirectToNewPage()" disabled> Upload
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container email-section">
+
+      <h1>Please verify your email...</h1>
+
+      <img src="img/email.jpg" alt="email-icon" class="mb-2" style="height: 105px; width: 140px;">
+
+
+      <p> Please verify your email address. We've sent a confirmation email to: </p>
+
+      <div class="my-3">
+        <h6> <b> account@refero.design </b> </h6>
+      </div>
+
+
+      <p> Click the confirmation link in that email to begin using Dribbble. </p> <br>
+
+      <p> Didn't receive the email? Check your Spam folder, it may have been caught by a filter.</p> <br>
+
+      <p> If you still don't see it, you can <a href="#" class="a-pink"> resend the confirmation email. </a> </p> <br>
+
+      <p>
+        Wrong email address? <a href="#" class="a-pink"> Change it. </a>
+      </p>
+
+  </div>
+
+  </main>
+
+  <footer class="footer mt-auto py-3 text-black">
+    <div class="footer-container">
+      <div class="row">
+
+        <div class="col-md-2">
+          <div class="d-flex flex-column align-items-start">
+
+            <img src="img/dribFoot.jpg" alt="Logo" class="mb-3" style="height: 35px; width: 120px;">
+
+            <p> Dribbble is the world's leading <br> community for creatives to share, grow, and get hired. </p>
+
+            <!-- Social icons -->
+            <div class="social-icons mt-2">
+              <a href="#"><i class="bi bi-dribbble social-icon"></i></a>
+              <a href="#"><i class="bi bi-twitter social-icon"></i></a>
+              <a href="#"><i class="bi bi-facebook social-icon"></i></a>
+              <a href="#"><i class="bi bi-instagram social-icon"></i></a>
+              <a href="#"><i class="bi bi-pinterest social-icon"></i></a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-2 footer-sec-margin">
+          <p> <b> For designers </b> </p>
+          <ul class="list-unstyled">
+            <li><a href="#"> Go Pro! </a></li>
+            <li><a href="#"> Explore design work </a></li>
+            <li><a href="#"> Design blog </a></li>
+            <li><a href="#"> Overtime podcast </a></li>
+            <li><a href="#"> Playoffs </a></li>
+            <li><a href="#"> Weekly Warm-Up</a></li>
+            <li><a href="#"> Refer a Friend </a></li>
+            <li><a href="#"> Code of conduct </a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-2">
+          <p> <b> Hire designers </b> </p>
+          <ul class="list-unstyled">
+            <li><a href="#">Post a job opening</a></li>
+            <li><a href="#"> Post a freelance project </a></li>
+            <li><a href="#">Search for designers</a></li>
+          </ul>
+
+
+
+          <p> <b> Brands </b> </p>
+          <ul class="list-unstyled">
+            <li><a href="#">Advertise with us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <p> <b> Company </b> </p>
+          <ul class="list-unstyled">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Media kit</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <p> <b> Directories </b> </p>
+          <ul class="list-unstyled">
+            <li><a href="#">Design jobs</a></li>
+            <li><a href="#">Designers for hire</a></li>
+            <li><a href="#">Freelance designers for hire</a></li>
+            <li><a href="#"> Tags </a></li>
+            <li><a href="#"> Places </a></li>
+          </ul>
+          <p> <b> Design Assets </b> </p>
+          <ul class="list-unstyled">
+            <li><a href="#">Dribbble Marketplace</a></li>
+            <li><a href="#">Creative Market</a></li>
+            <li><a href="#">Fontspring</a></li>
+            <li><a href="#">Font Squirrel</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <p> <b> Design resources </b> </p>
+          <ul class="list-unstyled">
+            <li><a href="#">Freelancing</a></li>
+            <li><a href="#">Design Hiring</a></li>
+            <li><a href="#">Design Portfolio</a></li>
+            <li><a href="#">Design Education</a></li>
+            <li><a href="#">Creative Process</a></li>
+            <li><a href="#">Design Industry Trends</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="my-4">
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <p class="">&copy; 2023 Dribbble. All rights reserved. </p>
+        </div>
+
+        <div class="col-md-6 dribbled-text">
+          <p> <b> 20,501,853 </b> shots dribbled <b> <i class="bi bi-dribbble"
+                style="color: #ff0a68; font-size: 20px;"></i> </b>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
