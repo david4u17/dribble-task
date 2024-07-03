@@ -17,11 +17,17 @@ To view the project locally, you can follow these steps:
 2. **Navigate to the project directory:**
 
    ```bash
-cd dribble-task
+   cd dribble-task
 
 3. **Open the index.html file in your browser to start the website:**
 
    ```bash
-open index.html
+   open index.html
+
+## Technologies Used
+
+*HTML: For creating the structure of the website.
+*CSS: For styling the website pages.
+*JavaScript: For adding interactive elements and handling login logic.
 
 
