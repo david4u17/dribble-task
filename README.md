@@ -12,8 +12,16 @@ To view the project locally, you can follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
+   git clone https://github.com/david4u17/dribble-task.git
 
-   
+2. **Navigate to the project directory:**
+
+   ```bash
+cd dribble-task
+
+3. **Open the index.html file in your browser to start the website:**
+
+   ```bash
+open index.html
 
 
