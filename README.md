@@ -26,8 +26,8 @@ To view the project locally, you can follow these steps:
 
 ## Technologies Used
 
-*HTML: For creating the structure of the website.
-*CSS: For styling the website pages.
-*JavaScript: For adding interactive elements and handling login logic.
+ - HTML: For creating the structure of the website.
+ - CSS: For styling the website pages.
+ - JavaScript: For adding interactive elements and handling login logic.
 
 
